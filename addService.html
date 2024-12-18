@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords"
+		content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Akuna Tec</title>
+
+	<link href="./assets/css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<style>
+			.sidebar {
+				width: 272px;
+				height: 1287px;
+				border-right: 1px solid #E7E9EC;
+			    background-color: white;
+			    color:#E7E9EC;
+			}
+		  
+		
+			.sidebar-item a.sidebar-link {
+			  color: #56687A; 
+			  text-decoration: none;
+			  overflow-y:auto;
+			}
+		  
+			.sidebar-item a.sidebar-link:hover {
+			  background-color: #e6f3f4; 
+			  border-left-color:#48a6b2;
+			  color: #008394; 
+			}
+		  </style>
+		  
+		  <nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="" href="index.html">
+					<img src="./assets/images/Primary.png" alt="AdminKit Logo" style="width: 89px; height: 73px;
+					 margin-top:24px; margin-left:91px; margin-right:92px;
+					 margin-bottom:40px;">
+				  </a>			  
+				  <ul class="sidebar-nav" style=" width: Fixed(272px);
+				  height: Fixed(48px);
+				  top: 137px;
+				  border-left: 4px solid #E7E9EC;
+				  padding-top: 12px;
+				  padding-bottom: 12px;
+				  gap: 16px;">
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="dashboard.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								 <path fill="#008394" opacity="0.4" d="M16.0737 2H19.4596C20.8619 2 21.9982 3.14585 21.9982 4.55996V7.97452C21.9982 9.38864 20.8619 10.5345 19.4596 10.5345H16.0737C14.6714 10.5345 13.5352 9.38864 13.5352 7.97452V4.55996C13.5352 3.14585 14.6714 2 16.0737 2Z" fill="#008394"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.53852 2H7.92449C9.32676 2 10.463 3.14585 10.463 4.55996V7.97452C10.463 9.38864 9.32676 10.5345 7.92449 10.5345H4.53852C3.13626 10.5345 2 9.38864 2 7.97452V4.55996C2 3.14585 3.13626 2 4.53852 2ZM4.53852 13.4655H7.92449C9.32676 13.4655 10.463 14.6114 10.463 16.0255V19.44C10.463 20.8532 9.32676 22 7.92449 22H4.53852C3.13626 22 2 20.8532 2 19.44V16.0255C2 14.6114 3.13626 13.4655 4.53852 13.4655ZM19.4615 13.4655H16.0755C14.6732 13.4655 13.537 14.6114 13.537 16.0255V19.44C13.537 20.8532 14.6732 22 16.0755 22H19.4615C20.8637 22 22 20.8532 22 19.44V16.0255C22 14.6114 20.8637 13.4655 19.4615 13.4655Z" fill="#008394"/> </svg>
+							<span class="align-middle" style=" 
+							font-family: 'Inter';
+							color:#56687A;
+							font-weight: 400;
+							font-size: 16px;
+							line-height: 24px;">Dashboard</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="appointment.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" d="M16.7502 3.56V2C16.7502 1.59 16.4102 1.25 16.0002 1.25C15.5902 1.25 15.2502 1.59 15.2502 2V3.5H8.75022V2C8.75022 1.59 8.41022 1.25 8.00022 1.25C7.59022 1.25 7.25022 1.59 7.25022 2V3.56C4.55022 3.81 3.24023 5.42 3.04023 7.81C3.02023 8.1 3.26023 8.34 3.54023 8.34H20.4602C20.7502 8.34 20.9902 8.09 20.9602 7.81C20.7602 5.42 19.4502 3.81 16.7502 3.56Z" fill="#56687A"/>
+								<path fill="#008394" opacity="0.4" d="M20 9.83984C20.55 9.83984 21 10.2898 21 10.8398V16.9998C21 19.9998 19.5 21.9998 16 21.9998H8C4.5 21.9998 3 19.9998 3 16.9998V10.8398C3 10.2898 3.45 9.83984 4 9.83984H20Z" fill="#56687A"/>
+								<path fill="#008394" d="M8.5 14.9999C8.37 14.9999 8.24 14.9699 8.12 14.9199C8 14.8699 7.89001 14.7999 7.79001 14.7099C7.70001 14.6099 7.62999 14.4999 7.57999 14.3799C7.52999 14.2599 7.5 14.1299 7.5 13.9999C7.5 13.8699 7.52999 13.7399 7.57999 13.6199C7.62999 13.4999 7.70001 13.3899 7.79001 13.2899C7.89001 13.1999 8 13.1299 8.12 13.0799C8.36 12.9799 8.64 12.9799 8.88 13.0799C9 13.1299 9.10999 13.1999 9.20999 13.2899C9.29999 13.3899 9.37001 13.4999 9.42001 13.6199C9.47001 13.7399 9.5 13.8699 9.5 13.9999C9.5 14.1299 9.47001 14.2599 9.42001 14.3799C9.37001 14.4999 9.29999 14.6099 9.20999 14.7099C9.10999 14.7999 9 14.8699 8.88 14.9199C8.76 14.9699 8.63 14.9999 8.5 14.9999Z" fill="#56687A"/>
+								<path fill="#008394" d="M12 15.0001C11.87 15.0001 11.74 14.9701 11.62 14.9201C11.5 14.8701 11.39 14.8001 11.29 14.7101C11.11 14.5201 11 14.2601 11 14.0001C11 13.7401 11.11 13.4801 11.29 13.2901C11.39 13.2001 11.5 13.1301 11.62 13.0801C11.86 12.9701 12.14 12.9701 12.38 13.0801C12.5 13.1301 12.61 13.2001 12.71 13.2901C12.89 13.4801 13 13.7401 13 14.0001C13 14.2601 12.89 14.5201 12.71 14.7101C12.61 14.8001 12.5 14.8701 12.38 14.9201C12.26 14.9701 12.13 15.0001 12 15.0001Z" fill="#56687A"/>
+								<path fill="#008394" d="M8.5 18.4999C8.37 18.4999 8.24 18.4699 8.12 18.4199C8 18.3699 7.89001 18.2999 7.79001 18.2099C7.61001 18.0199 7.5 17.7599 7.5 17.4999C7.5 17.2399 7.61001 16.9799 7.79001 16.7899C7.89001 16.6999 8 16.6299 8.12 16.5799C8.36 16.4799 8.64 16.4799 8.88 16.5799C9 16.6299 9.10999 16.6999 9.20999 16.7899C9.38999 16.9799 9.5 17.2399 9.5 17.4999C9.5 17.7599 9.38999 18.0199 9.20999 18.2099C9.10999 18.2999 9 18.3699 8.88 18.4199C8.76 18.4699 8.63 18.4999 8.5 18.4999Z" fill="#56687A"/>
+								</svg>
+								<span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">Appointments</span>
+            </a>
+					</li>
+
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="exerciselibrary.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M20 8.25V18C20 21 18.21 22 16 22H8C5.79 22 4 21 4 18V8.25C4 5 5.79 4.25 8 4.25C8 4.87 8.24997 5.43 8.65997 5.84C9.06997 6.25 9.63 6.5 10.25 6.5H13.75C14.99 6.5 16 5.49 16 4.25C18.21 4.25 20 5 20 8.25Z" fill="#56687A"/>
+								<path fill="#008394" d="M16 4.25C16 5.49 14.99 6.5 13.75 6.5H10.25C9.63 6.5 9.06997 6.25 8.65997 5.84C8.24997 5.43 8 4.87 8 4.25C8 3.01 9.01 2 10.25 2H13.75C14.37 2 14.93 2.25 15.34 2.66C15.75 3.07 16 3.63 16 4.25Z" fill="#56687A"/>
+								<path fill="#008394" d="M12 13.75H8C7.59 13.75 7.25 13.41 7.25 13C7.25 12.59 7.59 12.25 8 12.25H12C12.41 12.25 12.75 12.59 12.75 13C12.75 13.41 12.41 13.75 12 13.75Z" fill="#56687A"/>
+								<path fill="#008394" d="M16 17.75H8C7.59 17.75 7.25 17.41 7.25 17C7.25 16.59 7.59 16.25 8 16.25H16C16.41 16.25 16.75 16.59 16.75 17C16.75 17.41 16.41 17.75 16 17.75Z" fill="#56687A"/>
+								</svg>
+								 <span class="align-middle" style=" 
+								 font-family: 'Inter';
+								 color:#56687A;
+								 font-weight: 400;
+								 font-size: 16px;
+								 line-height: 24px;">Exercise Library</span>
+            </a>
+					</li>
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="programbuilder.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M13.89 2.88014L9.19999 2.14014C5.28999 1.53014 3.47999 2.85014 2.85999 6.76014L2.11999 11.4501C1.71999 14.0101 2.13999 15.6701 3.58999 16.6801C4.34999 17.2201 5.38999 17.5801 6.73999 17.7901L11.43 18.5301C15.34 19.1401 17.15 17.8201 17.77 13.9101L18.5 9.22014C18.62 8.45014 18.67 7.76014 18.63 7.15014C18.5 4.65014 17.03 3.37014 13.89 2.88014ZM8.23999 9.35014C7.06999 9.35014 6.11999 8.40014 6.11999 7.24014C6.11999 6.07014 7.06999 5.12014 8.23999 5.12014C9.39999 5.12014 10.35 6.07014 10.35 7.24014C10.35 8.40014 9.39999 9.35014 8.23999 9.35014Z" fill="#56687A"/>
+								<path fill="#008394" d="M20.4998 13.4699L18.9998 17.9799C17.7498 21.7399 15.7498 22.7399 11.9898 21.4899L7.47984 19.9899C5.20984 19.2399 3.94984 18.1999 3.58984 16.6799C4.34984 17.2199 5.38984 17.5799 6.73984 17.7899L11.4298 18.5299C15.3398 19.1399 17.1498 17.8199 17.7698 13.9099L18.4998 9.2199C18.6198 8.4499 18.6698 7.7599 18.6298 7.1499C21.0198 8.4199 21.5398 10.3399 20.4998 13.4699Z" fill="#56687A"/>
+								<path fill="#008394" d="M10.3511 7.24012C10.3511 8.40012 9.40109 9.35012 8.24109 9.35012C7.07109 9.35012 6.12109 8.40012 6.12109 7.24012C6.12109 6.07012 7.07109 5.12012 8.24109 5.12012C9.40109 5.12012 10.3511 6.07012 10.3511 7.24012Z" fill="#56687A"/>
+								</svg>
+								 <span class="align-middle" style=" 
+								 font-family: 'Inter';
+								 color:#56687A;
+								 font-weight: 400;
+								 font-size: 16px;
+								 line-height: 24px;">Program Builder</span>
+            </a>
+					</li>
+
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="patientsmanagement.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M9 2C6.38 2 4.25 4.13 4.25 6.75C4.25 9.32 6.26 11.4 8.88 11.49C8.96 11.48 9.04 11.48 9.1 11.49C9.12 11.49 9.13 11.49 9.15 11.49C9.16 11.49 9.16 11.49 9.17 11.49C11.73 11.4 13.74 9.32 13.75 6.75C13.75 4.13 11.62 2 9 2Z" fill="#56687A"/>
+								<path fill="#008394" d="M14.0809 14.1499C11.2909 12.2899 6.74094 12.2899 3.93094 14.1499C2.66094 14.9999 1.96094 16.1499 1.96094 17.3799C1.96094 18.6099 2.66094 19.7499 3.92094 20.5899C5.32094 21.5299 7.16094 21.9999 9.00094 21.9999C10.8409 21.9999 12.6809 21.5299 14.0809 20.5899C15.3409 19.7399 16.0409 18.5999 16.0409 17.3599C16.0309 16.1299 15.3409 14.9899 14.0809 14.1499Z" fill="#56687A"/>
+								<path fill="#008394" opacity="0.4" d="M19.9894 7.3401C20.1494 9.2801 18.7694 10.9801 16.8594 11.2101C16.8494 11.2101 16.8494 11.2101 16.8394 11.2101H16.8094C16.7494 11.2101 16.6894 11.2101 16.6394 11.2301C15.6694 11.2801 14.7794 10.9701 14.1094 10.4001C15.1394 9.4801 15.7294 8.1001 15.6094 6.6001C15.5394 5.7901 15.2594 5.0501 14.8394 4.4201C15.2194 4.2301 15.6594 4.1101 16.1094 4.0701C18.0694 3.9001 19.8194 5.3601 19.9894 7.3401Z" fill="#56687A"/>
+								<path fill="#008394" d="M21.9883 16.5899C21.9083 17.5599 21.2883 18.3999 20.2483 18.9699C19.2483 19.5199 17.9883 19.7799 16.7383 19.7499C17.4583 19.0999 17.8783 18.2899 17.9583 17.4299C18.0583 16.1899 17.4683 14.9999 16.2883 14.0499C15.6183 13.5199 14.8383 13.0999 13.9883 12.7899C16.1983 12.1499 18.9783 12.5799 20.6883 13.9599C21.6083 14.6999 22.0783 15.6299 21.9883 16.5899Z" fill="#56687A"/>
+								</svg>
+								<span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">Patient Management</span>
+            </a>
+					</li>
+
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="invoice.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M6.73 19.7C7.55 18.82 8.8 18.89 9.52 19.85L10.53 21.2C11.34 22.27 12.65 22.27 13.46 21.2L14.47 19.85C15.19 18.89 16.44 18.82 17.26 19.7C19.04 21.6 20.49 20.97 20.49 18.31V7.04C20.5 3.01 19.56 2 15.78 2H8.22C4.44 2 3.5 3.01 3.5 7.04V18.3C3.5 20.97 4.96 21.59 6.73 19.7Z" fill="#56687A"/>
+								<path fill="#008394" d="M16 7.75H8C7.59 7.75 7.25 7.41 7.25 7C7.25 6.59 7.59 6.25 8 6.25H16C16.41 6.25 16.75 6.59 16.75 7C16.75 7.41 16.41 7.75 16 7.75Z" fill="#56687A"/>
+								<path fill="#008394" d="M15 11.75H9C8.59 11.75 8.25 11.41 8.25 11C8.25 10.59 8.59 10.25 9 10.25H15C15.41 10.25 15.75 10.59 15.75 11C15.75 11.41 15.41 11.75 15 11.75Z" fill="#56687A"/>
+								</svg>
+								<span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">Invoice</span>
+            </a>
+					</li>
+
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="practitioner.html">
+							<svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M6.75 0C4.13 0 2 2.13 2 4.75C2 7.32 4.01 9.4 6.63 9.49C6.71 9.48 6.79 9.48 6.85 9.49C6.87 9.49 6.88 9.49 6.9 9.49C6.91 9.49 6.91 9.49 6.92 9.49C9.48 9.4 11.49 7.32 11.5 4.75C11.5 2.13 9.37 0 6.75 0Z" fill="#56687A"/>
+								<path fill="#008394" d="M12.12 12.1499C9.33 10.2899 4.78 10.2899 1.97 12.1499C0.7 12.9999 0 14.1499 0 15.3799C0 16.6099 0.7 17.7499 1.96 18.5899C3.36 19.5299 5.2 19.9999 7.04 19.9999C8.88 19.9999 10.72 19.5299 12.12 18.5899C13.38 17.7399 14.08 16.5999 14.08 15.3599C14.07 14.1299 13.38 12.9899 12.12 12.1499Z" fill="#56687A"/>
+								</svg>
+								</i> <span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">Practitioner</span>
+            </a>
+					</li>
+
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="service.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M18.9381 5.41994L13.7681 2.42994C12.7781 1.85994 11.2281 1.85994 10.2381 2.42994L5.01813 5.43994C2.94813 6.83994 2.82812 7.04994 2.82812 9.27994V14.7099C2.82812 16.9399 2.94813 17.1599 5.05813 18.5799L10.2281 21.5699C10.7281 21.8599 11.3681 21.9999 11.9981 21.9999C12.6281 21.9999 13.2681 21.8599 13.7581 21.5699L18.9781 18.5599C21.0481 17.1599 21.1681 16.9499 21.1681 14.7199V9.27994C21.1681 7.04994 21.0481 6.83994 18.9381 5.41994Z" fill="#56687A"/>
+								<path fill="#008394" d="M12 15.25C13.7949 15.25 15.25 13.7949 15.25 12C15.25 10.2051 13.7949 8.75 12 8.75C10.2051 8.75 8.75 10.2051 8.75 12C8.75 13.7949 10.2051 15.25 12 15.25Z" fill="#56687A"/>
+								</svg>
+								 <span class="align-middle" style=" 
+								 font-family: 'Inter';
+								 color:#56687A;
+								 font-weight: 400;
+								 font-size: 16px;
+								 line-height: 24px;">Service Management</span>
+            </a>
+					</li>
+
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="analytics.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2Z" fill="#56687A"/>
+								<path fill="#008394" d="M16.4198 7.8099V16.1899C16.4198 16.8299 15.8998 17.3499 15.2598 17.3499C14.6098 17.3499 14.0898 16.8299 14.0898 16.1899V7.8099C14.0898 7.1699 14.6098 6.6499 15.2598 6.6499C15.8998 6.6499 16.4198 7.1699 16.4198 7.8099Z" fill="#56687A"/>
+								<path fill="#008394" d="M9.90812 12.93V16.19C9.90812 16.83 9.38812 17.35 8.73812 17.35C8.09812 17.35 7.57812 16.83 7.57812 16.19V12.93C7.57812 12.29 8.09812 11.77 8.73812 11.77C9.38812 11.77 9.90812 12.29 9.90812 12.93Z" fill="#56687A"/>
+								</svg>
+								<span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">Analytics</span>
+            </a>
+					</li>
+
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="class.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M16.19 2H7.82C4.17 2 2 4.17 2 7.81V16.18C2 19.82 4.17 21.99 7.81 21.99H16.18C19.82 21.99 21.99 19.82 21.99 16.18V7.81C22 4.17 19.83 2 16.19 2Z" fill="#56687A"/>
+								<path fill="#008394" fill-rule="evenodd" clip-rule="evenodd" d="M16.25 2.0002V12.42C16.25 13.06 16.06 13.54 15.73 13.73C15.39 13.93 14.85 13.83 14.25 13.47L12.93 12.68C12.42 12.37 11.58 12.37 11.07 12.68L9.75 13.47C9.15 13.83 8.61 13.92 8.27 13.73C7.94 13.54 7.75 13.06 7.75 12.42V2.00027C7.77327 2.00009 7.79661 2 7.82 2H16.19C16.21 2 16.23 2.00007 16.25 2.0002Z" fill="#56687A"/>
+								</svg>
+								 <span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">Class Management</span>
+            </a>
+					</li>
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="blog.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" d="M17 11C16.45 11 16 10.55 16 10V9C16 7 15 6 13 6H9C7 6 6 7 6 9V15C6 17 7 18 9 18H15C17 18 18 17 18 15V12C18 11.45 17.55 11 17 11ZM10 9.25H12C12.41 9.25 12.75 9.59 12.75 10C12.75 10.41 12.41 10.75 12 10.75H10C9.59 10.75 9.25 10.41 9.25 10C9.25 9.59 9.59 9.25 10 9.25ZM14 14.75H10C9.59 14.75 9.25 14.41 9.25 14C9.25 13.59 9.59 13.25 10 13.25H14C14.41 13.25 14.75 13.59 14.75 14C14.75 14.41 14.41 14.75 14 14.75Z" fill="#56687A"/>
+								<path fill="#008394" opacity="0.4" d="M16.1917 2H7.82172C4.18172 2 2.01172 4.17 2.01172 7.81V16.18C2.01172 19.82 4.18172 21.99 7.82172 21.99H16.1917C19.8317 21.99 22.0017 19.82 22.0017 16.18V7.81C22.0017 4.17 19.8317 2 16.1917 2Z" fill="#56687A"/>
+								</svg>
+								<span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">Blog</span>
+            </a>
+					</li>
+
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="staticontent.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M20.5 10.19H17.61C15.24 10.19 13.31 8.26 13.31 5.89V3C13.31 2.45 12.86 2 12.31 2H8.07C4.99 2 2.5 4 2.5 7.57V16.43C2.5 20 4.99 22 8.07 22H15.93C19.01 22 21.5 20 21.5 16.43V11.19C21.5 10.64 21.05 10.19 20.5 10.19Z" fill="#56687A"/>
+								<path fill="#008394" d="M15.7997 2.20999C15.3897 1.79999 14.6797 2.07999 14.6797 2.64999V6.13999C14.6797 7.59999 15.9197 8.80999 17.4297 8.80999C18.3797 8.81999 19.6997 8.81999 20.8297 8.81999C21.3997 8.81999 21.6997 8.14999 21.2997 7.74999C19.8597 6.29999 17.2797 3.68999 15.7997 2.20999Z" fill="#56687A"/>
+								<path fill="#008394" d="M13.5 13.75H7.5C7.09 13.75 6.75 13.41 6.75 13C6.75 12.59 7.09 12.25 7.5 12.25H13.5C13.91 12.25 14.25 12.59 14.25 13C14.25 13.41 13.91 13.75 13.5 13.75Z" fill="#56687A"/>
+								<path fill="#008394" d="M11.5 17.75H7.5C7.09 17.75 6.75 17.41 6.75 17C6.75 16.59 7.09 16.25 7.5 16.25H11.5C11.91 16.25 12.25 16.59 12.25 17C12.25 17.41 11.91 17.75 11.5 17.75Z" fill="#56687A"/>
+								</svg>
+								<span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">Static Content</span>
+            </a>
+					</li>
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="faq.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M17 18.4297H13L8.54999 21.3897C7.88999 21.8297 7 21.3597 7 20.5597V18.4297C4 18.4297 2 16.4297 2 13.4297V7.42969C2 4.42969 4 2.42969 7 2.42969H17C20 2.42969 22 4.42969 22 7.42969V13.4297C22 16.4297 20 18.4297 17 18.4297Z" fill="#56687A"/>
+								<path fill="#008394" d="M11.9998 12.1094C11.5898 12.1094 11.2498 11.7694 11.2498 11.3594V11.1494C11.2498 9.98941 12.0998 9.4194 12.4198 9.1994C12.7898 8.9494 12.9098 8.77941 12.9098 8.51941C12.9098 8.01941 12.4998 7.60938 11.9998 7.60938C11.4998 7.60938 11.0898 8.01941 11.0898 8.51941C11.0898 8.92941 10.7498 9.26941 10.3398 9.26941C9.92984 9.26941 9.58984 8.92941 9.58984 8.51941C9.58984 7.18941 10.6698 6.10938 11.9998 6.10938C13.3298 6.10938 14.4098 7.18941 14.4098 8.51941C14.4098 9.65941 13.5698 10.2294 13.2598 10.4394C12.8698 10.6994 12.7498 10.8694 12.7498 11.1494V11.3594C12.7498 11.7794 12.4098 12.1094 11.9998 12.1094Z" fill="#56687A"/>
+								<path fill="#008394" d="M12 14.5996C11.58 14.5996 11.25 14.2596 11.25 13.8496C11.25 13.4396 11.59 13.0996 12 13.0996C12.41 13.0996 12.75 13.4396 12.75 13.8496C12.75 14.2596 12.42 14.5996 12 14.5996Z" fill="#56687A"/>
+								</svg>
+								
+								<span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">FAQ</span>
+            </a>
+					</li>
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="broadcastnotification.html">
+							<svg fill="#008394" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M22 6.25V11.35C22 12.62 21.58 13.69 20.83 14.43C20.09 15.18 19.02 15.6 17.75 15.6V17.41C17.75 18.09 16.99 18.5 16.43 18.12L15.46 17.48C15.55 17.17 15.59 16.83 15.59 16.47V12.4C15.59 10.36 14.23 9 12.19 9H5.39999C5.25999 9 5.13 9.01002 5 9.02002V6.25C5 3.7 6.7 2 9.25 2H17.75C20.3 2 22 3.7 22 6.25Z" fill="#56687A"/>
+								<path fill="#008394" d="M15.59 12.4V16.47C15.59 16.83 15.55 17.17 15.46 17.48C15.09 18.95 13.87 19.87 12.19 19.87H9.47L6.45 21.88C6 22.19 5.39999 21.86 5.39999 21.32V19.87C4.37999 19.87 3.53 19.53 2.94 18.94C2.34 18.34 2 17.49 2 16.47V12.4C2 10.5 3.18 9.19002 5 9.02002C5.13 9.01002 5.25999 9 5.39999 9H12.19C14.23 9 15.59 10.36 15.59 12.4Z" fill="#56687A"/>
+								</svg>
+								
+								
+								<span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">BroadCast Manager</span>
+            </a>
+					</li>
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="membership.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path  fill="#008394" opacity="0.4" d="M19 10.2808V17.4308C18.97 20.2808 18.19 21.0008 15.22 21.0008H5.78003C2.76003 21.0008 2 20.2508 2 17.2708V10.2808C2 7.58078 2.63 6.71078 5 6.57078C5.24 6.56078 5.50003 6.55078 5.78003 6.55078H15.22C18.24 6.55078 19 7.30078 19 10.2808Z" fill="#56687A"/>
+								<path  fill="#008394"  d="M22 6.73V13.72C22 16.42 21.37 17.29 19 17.43V10.28C19 7.3 18.24 6.55 15.22 6.55H5.78003C5.50003 6.55 5.24 6.56 5 6.57C5.03 3.72 5.81003 3 8.78003 3H18.22C21.24 3 22 3.75 22 6.73Z" fill="#56687A"/>
+								<path fill="#008394"  d="M6.95831 18.5605H5.23828C4.82828 18.5605 4.48828 18.2205 4.48828 17.8105C4.48828 17.4005 4.82828 17.0605 5.23828 17.0605H6.95831C7.36831 17.0605 7.70831 17.4005 7.70831 17.8105C7.70831 18.2205 7.37831 18.5605 6.95831 18.5605Z" fill="#56687A"/>
+								<path  fill="#008394" d="M12.5494 18.5605H9.10938C8.69938 18.5605 8.35938 18.2205 8.35938 17.8105C8.35938 17.4005 8.69938 17.0605 9.10938 17.0605H12.5494C12.9594 17.0605 13.2994 17.4005 13.2994 17.8105C13.2994 18.2205 12.9694 18.5605 12.5494 18.5605Z" fill="#56687A"/>
+								<path fill="#008394" d="M19 11.8594H2V13.3594H19V11.8594Z" fill="#56687A"/>
+								</svg>
+								
+								
+								<span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">Membership</span>
+            </a>
+					</li>
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="settings.html">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M2 12.8799V11.1199C2 10.0799 2.85 9.21994 3.9 9.21994C5.71 9.21994 6.45 7.93994 5.54 6.36994C5.02 5.46994 5.33 4.29994 6.24 3.77994L7.97 2.78994C8.76 2.31994 9.78 2.59994 10.25 3.38994L10.36 3.57994C11.26 5.14994 12.74 5.14994 13.65 3.57994L13.76 3.38994C14.23 2.59994 15.25 2.31994 16.04 2.78994L17.77 3.77994C18.68 4.29994 18.99 5.46994 18.47 6.36994C17.56 7.93994 18.3 9.21994 20.11 9.21994C21.15 9.21994 22.01 10.0699 22.01 11.1199V12.8799C22.01 13.9199 21.16 14.7799 20.11 14.7799C18.3 14.7799 17.56 16.0599 18.47 17.6299C18.99 18.5399 18.68 19.6999 17.77 20.2199L16.04 21.2099C15.25 21.6799 14.23 21.3999 13.76 20.6099L13.65 20.4199C12.75 18.8499 11.27 18.8499 10.36 20.4199L10.25 20.6099C9.78 21.3999 8.76 21.6799 7.97 21.2099L6.24 20.2199C5.33 19.6999 5.02 18.5299 5.54 17.6299C6.45 16.0599 5.71 14.7799 3.9 14.7799C2.85 14.7799 2 13.9199 2 12.8799Z" fill="#56687A"/>
+								<path fill="#008394" d="M12 15.25C13.7949 15.25 15.25 13.7949 15.25 12C15.25 10.2051 13.7949 8.75 12 8.75C10.2051 8.75 8.75 10.2051 8.75 12C8.75 13.7949 10.2051 15.25 12 15.25Z" fill="#56687A"/>
+								</svg>
+								<span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">Settings</span>
+            </a>
+					</li>
+				<li class="sidebar-item">
+						<a class="sidebar-link" href="">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#008394" opacity="0.4" d="M9 7.2V16.79C9 20 11 22 14.2 22H16.79C19.99 22 21.99 20 21.99 16.8V7.2C22 4 20 2 16.8 2H14.2C11 2 9 4 9 7.2Z" fill="#56687A"/>
+								<path fill="#008394" d="M5.57141 8.12002L2.22141 11.47C1.93141 11.76 1.93141 12.24 2.22141 12.53L5.57141 15.88C5.86141 16.17 6.34141 16.17 6.63141 15.88C6.92141 15.59 6.92141 15.11 6.63141 14.82L4.56141 12.75H15.2514C15.6614 12.75 16.0014 12.41 16.0014 12C16.0014 11.59 15.6614 11.25 15.2514 11.25H4.56141L6.63141 9.18002C6.78141 9.03002 6.85141 8.84002 6.85141 8.65002C6.85141 8.46002 6.78141 8.26002 6.63141 8.12002C6.34141 7.82002 5.87141 7.82002 5.57141 8.12002Z" fill="#56687A"/>
+								</svg>
+								<span class="align-middle" style=" 
+								font-family: 'Inter';
+								color:#56687A;
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 24px;">Logout</span>
+            </a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="main" style=" font-family: 'Inter', sans-serif;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 36px;
+"
+			>
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+                <a class="sidebar-toggle js-sidebar-toggle">
+                    <i class="hamburger align-self-center"></i>
+                </a>
+                <h1 style=" font-family: 'Inter', sans-serif;
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 36px;">Service Management</h1>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav navbar-align">
+                        <li style=" margin-top: 18px; margin-bottom: 18px;">
+                            <div class="search-container">
+                                <input type="search" class="form-control" placeholder="Search">
+                              </div>
+                        </li>
+                            <style>
+                                .search-container {
+                                    position: relative;
+                                    min-width: 200px;
+                                    max-width: 300px;
+                                    flex: 1;
+                                    margin-right: 18.88px;
+                                  }
+                                  
+                                  .search-container .form-control {
+                                    width: 246.4px;
+                                    height: 50px;
+                                    border-radius: 10px;
+                                    border: 1px solid #E7E9EC;
+                                    padding: 13px 16px 13px 50px;
+                                    font-size:16px;
+                                    line-height:24px;
+                                    color:#56687A;
+                                  }
+                                  
+                                  .search-container::before {
+                                    content: '';
+                                    position: absolute;
+                                    left: 10px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    width: 24px;
+                                    height: 24px;
+                                    background: url('../assets/images/settings.svg') no-repeat center;
+                                    z-index: 1;
+                                    margin-right: 10px;
+                                  }
+                                  
+                            </style>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+                                    <div class="position-relative" style=" 
+                                        width:Fixed(47.2px);
+                                        height: Fixed(50px);
+                                        position: absolute;
+                                        top: 18px;
+                                        border-radius: 10px;
+                                        padding: 9px;
+                                        color:#0E2741;
+                                        background-color:#F8F8F8;
+                                        margin-right: 18.88px;
+                                        ">
+                                        <i class="align-middle" style="height:24px; width:24px;" data-feather="bell"></i>
+                                    </div>
+                                </a>
+                                </li>	
+                                <li class="nav-item dropdown"
+                                style="width: 173.71px; height: 60px; margin-right: 24px; margin-top: 18px;">
+                                <div class="user-profile web-view d-flex align-items-center">
+                                    <img src="./assets/images/avatar.jpg" alt="Profile" class="profile-image">
+                                    <div class="user-info">
+                                      <span class="user-name">Robert Allen</span>
+                                      <span class="user-role">Practitioner</span>
+                                      <div class="dropdown-menu">
+                                        <a href="/profile.html" class="dropdown-item">Profile</a>
+                                        <a href="/logout.html" class="dropdown-item">Logout</a>
+                                      </div>
+                                    </div>
+                                    <img src="./assets/images/down-arrow.svg" alt="Down Arrow" class="down-arrow">
+                                  </div>
+                            </li>
+                           <style>
+                            .user-profile {
+                                position: relative;
+                                cursor: pointer;
+                                width: 173.71px;
+                                height: 50px;
+                                border: 1px solid #E7E9EC;
+                                border-radius: 8px;
+                                padding: 5px 4.72px 5px 4.72px;
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                              }
+                              
+                              .user-profile .down-arrow {
+                                transition: transform 0.3s ease;
+                              }
+                              
+                              .user-profile.show .down-arrow {
+                                transform: rotate(180deg);
+                              }
+                              
+                              .user-profile .dropdown-menu {
+                                display: none;
+                                position: absolute;
+                                top: 100%;
+                                right: 0;
+                                background-color: #FFFFFF;
+                                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                                z-index: 100;
+                                width: 100%;
+                                height: 96px;
+                                padding: 8px;
+                               
+                                box-shadow: 0px 24px 48px -4px #1118270F;
+                                border: 1px solid #F9FAFB;
+                              
+                              
+                              }
+                              
+                              .user-profile .dropdown-menu.show {
+                                display: block;
+                              }
+                              
+                              
+                              
+                              .user-profile .dropdown-item {
+                                display: block;
+                                text-decoration: none;
+                                padding: 10px 14px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                color: #111827;
+                              }
+                              
+                              .user-profile .dropdown-item:hover {
+                                background-color: #F9FAFB !important;
+                              }
+                              
+                              
+                              
+                              .user-profile .dropdown-item:focus {
+                                color: #111827 !important;
+                                background-color: #F9FAFB !important;
+                              }
+                              
+                              
+                              .profile-image {
+                                width: 37.76px;
+                                height: 40px;
+                                border-radius: 8px;
+                                object-fit: cover;
+                              }
+                              
+                              .user-info {
+                                display: flex;
+                                flex-direction: column;
+                              }
+                              
+                              .user-name {
+                                color: #0E2741;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 24px;
+                                margin-bottom: 0;
+                              }
+                              
+                              .user-role {
+                                color: #56687A;
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                margin-top: 0;
+                              }
+                              
+                           </style> 
+                            
+                    </ul>
+                </div>
+            </nav>
+			<main class="content" style="background-color:#fbfbfb;">
+				
+                <span id="back" onclick="window.location.href='service.html';">
+                    <svg  style="margin-top:10px;margin-bottom:30px;" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.84419 14.6665C7.98231 14.6665 8.11728 14.6252 8.23184 14.5481C8.34639 14.4709 8.43531 14.3613 8.48723 14.2333C8.53914 14.1053 8.55169 13.9647 8.52327 13.8296C8.49484 13.6944 8.42674 13.5708 8.32766 13.4745L3.03472 8.18158L16.6281 8.18158C16.7201 8.18288 16.8114 8.16589 16.8967 8.1316C16.9821 8.0973 17.0598 8.04639 17.1252 7.98181C17.1907 7.91723 17.2428 7.84028 17.2783 7.75543C17.3138 7.67058 17.332 7.57952 17.332 7.48754C17.332 7.39557 17.3138 7.30451 17.2783 7.21966C17.2428 7.1348 17.1907 7.05785 17.1252 6.99328C17.0598 6.9287 16.9821 6.87779 16.8967 6.84349C16.8114 6.8092 16.7201 6.79221 16.6281 6.79351L3.03472 6.7935L8.32767 1.50056C8.39427 1.43661 8.44745 1.36001 8.48408 1.27524C8.52072 1.19048 8.54007 1.09926 8.54101 1.00693C8.54195 0.914595 8.52445 0.823002 8.48955 0.737513C8.45465 0.652024 8.40304 0.574358 8.33775 0.509065C8.27245 0.443772 8.19479 0.392162 8.1093 0.35726C8.02381 0.322357 7.93222 0.304863 7.83988 0.305802C7.74755 0.306741 7.65633 0.326093 7.57157 0.362726C7.48681 0.39936 7.41021 0.452538 7.34625 0.519145L0.868563 6.99684C0.738455 7.127 0.665366 7.3035 0.665366 7.48754C0.665366 7.67158 0.738455 7.84809 0.868563 7.97825L7.34625 14.4559C7.41094 14.5226 7.48835 14.5755 7.57388 14.6117C7.65941 14.6479 7.75132 14.6665 7.84419 14.6665Z" fill="#4B5563"/>
+                        </svg>                        
+                  </span> 
+                  <div style="width: 1450px;
+                    background-color:white;
+                    height: 791px;
+                    left: 292px;
+                    border: 1px solid #E7E9EC;
+                    border-radius: 20px;">
+                    <div>
+                 <div style="width:1400px;margin-top:20px;margin-left:20px;padding-top:4px;
+                 padding-bottom:12px;color:#111827;font-size:16px;font-weight:600px;line-height:24px;border-bottom: 1px solid #E7E9EC;">Add Service</div>
+                  </div>  
+                  <div  style="margin-left:20px;margin-top:20px;width:584px;height:48px;border-radius:8px;
+                  border:1px solid #CFD4D9;">
+               <input style="color:#56687A;font-size:14px;border:none;margin-left:16px;" type="text" placeholder="Service Name">
+              </div>
+                  <div  style="margin-left:20px;margin-top:20px;width:584px;height:48px;border-radius:8px;
+                  border:1px solid #CFD4D9;">
+               <input style="color:#56687A;font-size:14px;border:none;margin-left:16px;" type="text" placeholder="Category">
+              </div>
+                  <div  style="margin-left:20px;margin-top:20px;width:584px;height:48px;border-radius:8px;
+                  border:1px solid #CFD4D9;">
+               <input style="color:#56687A;font-size:14px;border:none;margin-left:16px;" type="text" placeholder="Price">
+              </div>
+                  <div  style="margin-left:20px;margin-top:20px;width:584px;height:48px;border-radius:8px;
+                  border:1px solid #CFD4D9;">
+               <input style="color:#56687A;font-size:14px;border:none;margin-left:16px;" type="text" placeholder="Duration">
+              </div>
+              <div  style="margin-left:20px;margin-top:20px;width:584px;height:101px;border-radius:8px;
+                  border:1px solid #CFD4D9;">
+               <input style="color:#56687A;font-size:14px;border:none;margin-left:16px;margin-top:25px;" type="text" placeholder="Description">
+              </div>
+              <div style="display:flex;justify-content:space-between;margin-top:24px;margin-left:24px;width:584px;height:48px;">
+                <button style="
+                width: 92px;
+                position: absolute;
+                border-radius: 8px;
+                border:1px solid red;
+                padding: 12px 16px;
+                background-color: white;
+                align-items: center;
+                color:red;
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 18px;
+                text-align:center;
+                ">Cancel</button>
+
+                <button style="
+                width: 161px;
+                position: absolute;
+                border-radius: 8px;
+                border:none !important;
+                padding: 12px 25px;
+                background-color: #008394;
+                align-items: center;
+                color:white;
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 18px;
+                text-align:center;
+                margin-left:420px;
+                ">Create</button>
+                 </div>
+			</main>
+
+</html>
+<script src="./assets/js/app.js"></script>

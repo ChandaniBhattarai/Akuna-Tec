@@ -1,0 +1,203 @@
+body {
+  font-family: "Inter";
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.login-container {
+  display: flex;
+  width: 1600px;
+  height: 700px;
+  background-color: #fff;
+}
+
+.logo-section {
+  background-image: url("/assets/images/Rectangle.png");
+  background-size: contain;
+  background-position: center;
+  background-color: rgba(241, 249, 250, 1);
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .logo-section {
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding: 20px; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .logo-section {
+    padding: 15px; 
+  }
+}
+.logo {
+  width: 220px;
+  height: 210px;
+}
+
+.logo-section p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+}
+
+.form-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.form-section h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-section p {
+  margin: 0 0 20px;
+  color: #777;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-container {
+    width: Fixed(445px);
+    height: Hug(56px);
+    border-radius: 16px;
+    border: 1px solid #e7e9ec;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #email {
+    width: Fill(413px);
+    height: Hug(40px);
+    outline: none;
+    border: none;
+  }
+  
+#password {
+  width: Fixed(445px);
+  height: Hug(56px);
+  border-radius: 16px;
+  border: 1px solid #000;
+  padding: 16px;
+  border-color: #e7e9ec;
+}
+
+.login-btn {
+  padding: 10px;
+  background-color: #008394;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.login-btn:hover {
+  background-color: #00332e;
+}
+
+.options {
+  width: 445px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  gap: 5px;
+  margin-right:150px;
+}
+
+.options input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.options a {
+  color: #008394;
+  font-size: 14px;
+  font-family: 'Inter'; 
+  font-weight: 500;
+  line-height: 22px;
+  align-items: right;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+
+i.fa-chevron-left {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+#password {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #56687a;
+  width: 24px;
+  height: 8px;
+  top: 24px;
+  transform: rotate(180deg);
+}
+
+.forgotpwd-section{
+width: Hug(445px);
+height: Hug(319px);
+top: 353px;
+left: 905px;
+gap: 30px;
+
+}

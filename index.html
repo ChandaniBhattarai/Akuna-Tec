@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <script src="assets/js/loginpage.js"></script>
+</head>
+<body>
+  <div class="login-container">
+    <!-- Left Side: Logo Section -->
+    <div class="logo-section">
+      <img src="./assets/images/vector1.png" alt="Akuna Tec Logo" class="logo">
+      <p>AKUNA TEC</p>
+    </div>
+
+   <!-- Right Side: Form Section -->
+   <div class="form-section">
+    <h2 style="gap:5px;
+      font-family: 'Inter';
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 40px;
+      color:#0E2741;">Welcome 👋</h2>
+    <p style="font-family: 'Inter';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color:#56687A;
+      margin-bottom:30px;">Please login here</p>
+      <style>
+        .invalid-feedback {
+          color: red;
+          font-size: 12px;
+          display: none; 
+          font-weight: 400; 
+          line-height: 24px;
+          margin-top: 8px;
+        }
+        input:invalid {
+            border-color: red;
+        }
+    </style>
+    <form action="dashboard.html">
+      <div class="email-container">
+        <input type="email" id="email" placeholder="Email Address" required>
+        <div class="invalid-feedback" style="display: none;">Invalid Email Address</div>
+      </div>
+      
+      <div class="password-container">
+        <input type="password" id="password" placeholder="Password" required>
+        <span class="toggle-password" onclick="togglePasswordVisibility()">👁</span>
+      </div>
+      <div class="options">
+        <label>
+          <input type="checkbox">Remember Me
+        </label>
+        <a  class="forgotpassword" href="forgotpassword.html">Forgot Password?</a>
+      </div>
+      <button type="submit" class="login-btn" onclick="validateEmail()">Login</button>
+    </form>
+  </div>
+</div>
+<script>
+    function togglePasswordVisibility() {
+        const passwordInput = document.getElementById('password');
+        const toggleIcon = document.querySelector('.toggle-password');
+      
+        if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+          toggleIcon.textContent = '👁';
+        } else {
+          passwordInput.type = 'password';
+          toggleIcon.textContent = '👁';
+        }
+      }
+      
+</script>
+  </div>
+</body>
+</html>
